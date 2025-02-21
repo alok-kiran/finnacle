@@ -36,9 +36,14 @@ export default function Page() {
       </div>
       </div>
       </div>
-      <div className=' h-full w-full bg-blue-600 hidden lg:flex items-center justify-center'>
-        <Image src='/logo.svg' width={200} height={200} alt='logo' />
-      </div>
+      <div className="hidden lg:block w-full h-screen relative">
+              <Image
+                src="/images/home.png"
+                layout="fill"
+                objectFit="cover"
+                alt="logo"
+              />
+            </div>
     </div>
   )
 }
