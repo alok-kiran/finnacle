@@ -1,9 +1,10 @@
-import { UserButton } from "@clerk/nextjs";
+"use client";
 
 export default function DashBoard() {
+
   return (
-    <UserButton 
-      afterSignOutUrl="/"
-    />
+    <div>
+      Dashboard page
+    </div>
   );
 }
