@@ -19,7 +19,7 @@ export const accounts = pgTable("accounts", {
 //   transactions: many(transactions),
 // }));
 
-// export const insertAccountSchema = createInsertSchema(accounts);
+export const insertAccountSchema = createInsertSchema(accounts);
 
 // export const categories = pgTable("categories", {
 //   id: text("id").primaryKey(),
