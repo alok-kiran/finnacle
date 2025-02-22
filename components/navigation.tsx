@@ -9,29 +9,25 @@ import { MenuIcon } from 'lucide-react';
 
 const routes = [
     {
-        href: '/',
-        label: 'Overview'
-    },
-    {
-        href: '/accounts',
-        label: 'Accounts'
-    },
-    {
-        href: '/categories',
-        label: 'Categories'
-    },
-    {
-        href: '/budgets',
-        label: 'Budgets'
-    },
-    {
-        href: '/reports',
-        label: 'Reports'
-    },
-    {
-        href: '/settings',
-        label: 'Settings'
-    }
+        href: "/",
+        label: "Overview",
+      },
+      {
+        href: "/accounts",
+        label: "Accounts",
+      },
+      {
+        href: "/transactions",
+        label: "Transactions",
+      },
+      {
+        href: "/categories",
+        label: "Categories",
+      },
+      {
+        href: "/settings",
+        label: "Settings",
+      },
 ]
 
 
