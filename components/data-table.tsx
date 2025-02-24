@@ -82,7 +82,7 @@ export function DataTable<TData, TValue>({
           }
           className="max-w-sm"
         />
-        {table.getFilteredSelectedRowModel().rows.length > 0 && (
+        {table.getFilteredSelectedRowModel().rows?.length > 0 && (
           <Button
             disabled={disabled}
             size="sm"
@@ -98,7 +98,7 @@ export function DataTable<TData, TValue>({
             }}
           >
             <Trash className="size-4 mr-2" />
-            Delete ({table.getFilteredSelectedRowModel().rows.length})
+            Delete ({table.getFilteredSelectedRowModel().rows?.length})
           </Button>
         )}
       </div>
@@ -138,7 +138,7 @@ export function DataTable<TData, TValue>({
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={columns.length} className="h-24 text-center">
+                <TableCell colSpan={columns?.length} className="h-24 text-center">
                   No results.
                 </TableCell>
               </TableRow>
@@ -148,8 +148,8 @@ export function DataTable<TData, TValue>({
       </div>
       <div className="flex items-center justify-end space-x-2 py-4">
         <div className="flex-1 text-sm text-muted-foreground">
-          {table.getFilteredSelectedRowModel().rows.length} of{" "}
-          {table.getFilteredRowModel().rows.length} row(s) selected.
+          {table.getFilteredSelectedRowModel().rows?.length} of{" "}
+          {table.getFilteredRowModel().rows?.length} row(s) selected.
         </div>
         <Button
           variant="outline"

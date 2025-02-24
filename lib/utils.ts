@@ -42,7 +42,7 @@ export function fillMissingDays(
   startDate: Date,
   endDate: Date,
 ) {
-  if (activeDays.length === 0) {
+  if (activeDays?.length === 0) {
     return [];
   }
 

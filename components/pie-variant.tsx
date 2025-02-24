@@ -69,7 +69,7 @@ export const PieVariant = ({ data }: Props) => {
           {data.map((_entry, index) => (
             <Cell
               key={`cell-${index}`}
-              fill={COLORS[index % COLORS.length]}
+              fill={COLORS[index % COLORS?.length]}
             />
           ))}
         </Pie>

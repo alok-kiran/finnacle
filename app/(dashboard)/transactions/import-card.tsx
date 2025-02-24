@@ -63,7 +63,7 @@ export const ImportCard = ({
     });
   };
 
-  const progress = Object.values(selectedColumns).filter(Boolean).length;
+  const progress = Object.values(selectedColumns).filter(Boolean)?.length;
 
   const handleContinue = () => {
     const getColumnIndex = (column: string) => {
@@ -84,7 +84,7 @@ export const ImportCard = ({
         return transformedRow.every((item) => item === null) 
           ? []
           : transformedRow;
-      }).filter((row) => row.length > 0),
+      }).filter((row) => row?.length > 0),
     };
 
     const arrayOfData = mappedData.body.map((row) => {
@@ -124,11 +124,11 @@ export const ImportCard = ({
             </Button>
             <Button
               size="sm"
-              disabled={progress < requiredOptions.length}
+              disabled={progress < requiredOptions?.length}
               onClick={handleContinue}
               className="w-full lg:w-auto"
             >
-              Continue ({progress} / {requiredOptions.length})
+              Continue ({progress} / {requiredOptions?.length})
             </Button>
           </div>
         </CardHeader>

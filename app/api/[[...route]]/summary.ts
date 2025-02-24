@@ -136,7 +136,7 @@ const app = new Hono()
         .reduce((sum, current) => sum + current.value, 0);
 
       const finalCategories = topCategories;
-      if (otherCategories.length > 0) {
+      if (otherCategories?.length > 0) {
         finalCategories.push({ 
           name: "Other",
           value: otherSum,
